@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: white;
+}
+.container header section {
+  backdrop-filter: blur(30px);
+}
+.container header .navbar {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  padding: 0 40px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container header .navbar a {
+  color: black;
+  font-weight: bold;
+  padding: 0 5px;
+  transition: 0.4s;
+}
+.container header .navbar a:hover {
+  color: purple;
+}
+.container header .navbar .contact {
+  display: flex;
+  flex-direction: column;
+}
+.container header .navbar .second {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.container header .navbar .second .darkmode {
+  background-color: white;
+  width: 70px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 30px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 3px;
+  position: relative;
+}
+.container header .navbar .second .darkmode i {
+  font-size: 20px;
+}
+.container header .navbar .second .darkmode .sun {
+  z-index: 1000;
+  color: white;
+}
+.container header .navbar .second .darkmode .rol {
+  position: absolute;
+  background-color: rgb(60, 0, 255);
+  width: 29px;
+  left: 3px;
+  height: 29px;
+  border-radius: 50%;
+}
+.container header .navbar .second button {
+  background-color: #6911AD;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.container header .navbar .second button:hover {
+  background-color: #500d84;
+}
+.container header .e1 {
+  position: absolute;
+  left: 80px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif ;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+    header{
+        section{
+            backdrop-filter: blur(30px);
+        .navbar{
+            position: fixed;
+            z-index: 1000;
+            background-color: rgb(224, 224, 224);
+            width: 100%;
+            padding: 0 40px;
+            height: 80px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            a{
+                color: black;
+                font-weight: bold;
+                padding: 0 5px;
+                transition: .4s;
+                &:hover{
+                    color: purple;
+                }
+            }
+            .contact{
+                display: flex;
+                flex-direction: column;
+                .a1{
+                    font-size: 20px;
+                }
+        }
+                .second {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    justify-content: space-between;
+        
+                    .darkmode {
+                        background-color: white;
+                        width: 70px;
+                        height: 36px;
+                        cursor: pointer;
+                        border-radius: 30px;
+                        display: flex;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        padding: 0 3px;
+                        position: relative;
+        
+                        i {
+                            font-size: 20px;
+        
+                        }
+        
+                        .sun {
+                            z-index: 1000;
+                            color: white;
+                        }
+        
+                        .rol {
+                            position: absolute;
+                            background-color: rgb(60, 0, 255);
+                            width: 29px;
+                            left: 3px;
+                            height: 29px;
+                            border-radius: 50%;
+                        }
+                    }
+        
+                    button {
+                        background-color: #6911AD;
+                        color: white;
+                        cursor: pointer;
+                        font-size: 16px;
+                        padding: 10px 10px;
+                        border: none;
+                        border-radius: 10px;
+                        transition: .4s;
+        
+                        &:hover {
+                            background-color: #500d84;
+                        }
+                    }
+                }
+
+        .e1 {
+            position: absolute;
+            left: 80px;
+        }
+       
+    }
+}
