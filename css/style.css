@@ -8,86 +8,143 @@
 
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+}
+.container .gr-1 {
   position: absolute;
-  background-color: white;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
 }
-.container header section {
-  backdrop-filter: blur(30px);
+.container .gr-2 {
+  position: absolute;
+  z-index: -1;
 }
-.container header .navbar {
-  position: fixed;
-  z-index: 1000;
-  background-color: rgb(224, 224, 224);
+.container .navbar {
+  z-index: 10;
   width: 100%;
-  padding: 0 40px;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: rgb(226, 225, 225);
+  backdrop-filter: blur(20px) !important;
+  position: fixed;
 }
-.container header .navbar a {
+.container .navbar h1 a {
   color: black;
-  font-weight: bold;
-  padding: 0 5px;
+}
+.container .navbar .links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .navbar .links a {
+  color: black;
   transition: 0.4s;
 }
-.container header .navbar a:hover {
+.container .navbar .links a:hover {
   color: purple;
 }
-.container header .navbar .contact {
+.container .navbar .right-nav {
   display: flex;
-  flex-direction: column;
-}
-.container header .navbar .second {
-  display: flex;
-  gap: 20px;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
 }
-.container header .navbar .second .darkmode {
+.container .navbar .right-nav .darkmode {
   background-color: white;
-  width: 70px;
-  height: 36px;
-  cursor: pointer;
-  border-radius: 30px;
-  display: flex;
+  width: 65px;
+  height: 33px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 0 3px;
   position: relative;
+  justify-content: center;
+  border-radius: 30px;
+  gap: 20px;
 }
-.container header .navbar .second .darkmode i {
-  font-size: 20px;
-}
-.container header .navbar .second .darkmode .sun {
+.container .navbar .right-nav .darkmode .sun {
+  color: white;
   z-index: 1000;
-  color: white;
 }
-.container header .navbar .second .darkmode .rol {
-  position: absolute;
-  background-color: rgb(60, 0, 255);
-  width: 29px;
-  left: 3px;
-  height: 29px;
+.container .navbar .right-nav .darkmode .rol {
+  width: 27px;
+  height: 27px;
   border-radius: 50%;
-}
-.container header .navbar .second button {
-  background-color: #6911AD;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 10px;
-  transition: 0.4s;
-}
-.container header .navbar .second button:hover {
-  background-color: #500d84;
-}
-.container header .e1 {
+  background-color: rgb(70, 73, 255);
   position: absolute;
-  left: 80px;
+  left: 3px;
+}
+.container .navbar .right-nav .contact {
+  display: flex;
+  flex-direction: column;
+}
+.container .navbar .right-nav .contact .tel {
+  color: black;
+  font-size: 24px;
+}
+.container .navbar .right-nav .contact a {
+  color: black;
+}
+.container .navbar .right-nav button {
+  font-size: 17px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6911AD;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.container .navbar .right-nav button a {
+  color: white;
+}
+.container .navbar .right-nav button:hover {
+  background-color: #4f028a;
+}
+.container .menu-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 270px;
+}
+.container .menu-header .text {
+  width: 40%;
+  margin-left: 100px;
+}
+.container .menu-header .text h1 {
+  font-size: 40px;
+  line-height: 55px;
+  padding: 0 0 20px 0;
+  letter-spacing: 2px;
+}
+.container .menu-header .text p {
+  width: 80%;
+  padding: 0 0 160px 0;
+}
+.container .menu-header .text .mini-text {
+  display: flex;
+  align-items: center;
+}
+.container .menu-header .text .mini-text .color {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #6911AD;
+}
+.container .menu-header .text .mini-text a {
+  margin-left: -47px;
+  color: #6911AD;
+  font-size: 25px;
+}
+.container .menu-header .text .mini-text a span {
+  color: white;
+}
+.container .menu-header .img-bar {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  position: absolute;
+  right: 200px;
+  top: -90px;
+  background-color: rgb(174, 174, 174);
 }/*# sourceMappingURL=style.css.map */

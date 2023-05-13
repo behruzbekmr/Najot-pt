@@ -7,99 +7,152 @@
 }
 .container{
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    background-color: white;
-    header{
-        section{
-            backdrop-filter: blur(30px);
-        .navbar{
-            position: fixed;
-            z-index: 1000;
-            background-color: rgb(224, 224, 224);
-            width: 100%;
-            padding: 0 40px;
-            height: 80px;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+    min-height:100vh;
+    .gr-1{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+    .gr-2 {
+            position: absolute;
+            z-index: -1;
+    }
+    // NavBar qism
+    .navbar{
+        z-index: 10;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(226, 225, 225);
+        backdrop-filter: blur(20px) !important;
+        position: fixed;
+        // Logo
+        h1{
             a{
                 color: black;
-                font-weight: bold;
-                padding: 0 5px;
+            }
+        }
+        // links
+        .links{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            a{
+                color: black;
                 transition: .4s;
                 &:hover{
-                    color: purple;
+                    color: purple
+                }
+            }
+        }
+        // O'ng tomon
+        .right-nav{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            // Darkmode
+            .darkmode{
+                background-color: white;
+                width: 65px;
+                height: 33px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                justify-content: center;
+                border-radius: 30px;
+                gap: 20px;
+                .sun ,{
+                    color: white;;
+                    z-index: 1000;
+                }
+                .rol{
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 50%;
+                    background-color: rgb(70, 73, 255);
+                    position: absolute;
+                    left: 3px;
                 }
             }
             .contact{
                 display: flex;
                 flex-direction: column;
-                .a1{
-                    font-size: 20px;
+                .tel{
+                    color: black;
+                    font-size: 24px;
                 }
+                a{
+                    color: black;
+                }
+            }
+            button{
+                font-size: 17px;
+                padding: 9px 10px;
+                border-radius: 8px;
+                border: none;
+                background-color: #6911AD;
+                transition: .4s;
+                cursor: pointer;
+                a{
+                    color: white;
+                }
+                &:hover{
+                    background-color: #4f028a;
+                }
+            }
         }
-                .second {
-                    display: flex;
-                    gap: 20px;
-                    align-items: center;
-                    justify-content: space-between;
-        
-                    .darkmode {
-                        background-color: white;
-                        width: 70px;
-                        height: 36px;
-                        cursor: pointer;
-                        border-radius: 30px;
-                        display: flex;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 20px;
-                        padding: 0 3px;
-                        position: relative;
-        
-                        i {
-                            font-size: 20px;
-        
-                        }
-        
-                        .sun {
-                            z-index: 1000;
-                            color: white;
-                        }
-        
-                        .rol {
-                            position: absolute;
-                            background-color: rgb(60, 0, 255);
-                            width: 29px;
-                            left: 3px;
-                            height: 29px;
-                            border-radius: 50%;
-                        }
-                    }
-        
-                    button {
-                        background-color: #6911AD;
-                        color: white;
-                        cursor: pointer;
-                        font-size: 16px;
-                        padding: 10px 10px;
-                        border: none;
-                        border-radius: 10px;
-                        transition: .4s;
-        
-                        &:hover {
-                            background-color: #500d84;
-                        }
-                    }
+    }
+    // Menu-Header
+    .menu-header{
+        display: flex;
+        position: relative;
+        align-items: center;
+        top: 270px;
+        .text{
+            h1{
+                font-size: 40px;
+                line-height: 55px;
+                padding: 0 0 20px 0;
+                letter-spacing: 2px;
+            }
+            p{
+                width: 80%;
+                padding: 0 0 160px 0;
+            }
+            width: 40%;
+            margin-left: 100px;
+            .mini-text{
+                display: flex;
+                align-items: center;
+                .color{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: #6911AD;
                 }
+                                 a {
+                                     margin-left: -47px;
+                                     color: #6911AD;
+                                     font-size: 25px;
+                                     span{
+                                         color: white;
+                                     }
+                                 }
+            }
+        }
 
-        .e1 {
+        .img-bar{
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
             position: absolute;
-            left: 80px;
+            right:200px;
+            top: -90px;
+            background-color: rgb(174, 174, 174);
         }
-       
     }
 }
