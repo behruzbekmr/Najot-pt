@@ -147,4 +147,90 @@
   right: 200px;
   top: -90px;
   background-color: rgb(174, 174, 174);
+}
+.container .img3 {
+  position: absolute;
+  top: 640px;
+}
+.container .about-main {
+  top: 600px;
+  width: 100%;
+  position: relative;
+}
+.container .about-main .about-company {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 90px;
+}
+.container .about-main .about-company .text {
+  width: 50%;
+}
+.container .about-main .about-company .text h1 {
+  font-weight: bolder;
+  font-size: 44px;
+  padding-bottom: 20px;
+}
+.container .about-main .about-company .text p {
+  line-height: 25px;
+  width: 95%;
+}
+.container .about-main .about-company .value {
+  display: flex;
+  gap: 80px;
+}
+.container .about-main .about-company .value h1 {
+  padding: 30px 0;
+  font-size: 40px;
+  background: -webkit-linear-gradient(20deg, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container .about-main .about-company .value h1 span {
+  font-size: 14px;
+  font-weight: lighter;
+}
+.container .about-main .line {
+  position: absolute;
+  width: 100%;
+  top: 500px;
+}
+.container .about-main .advent {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.container .about-main .advent .box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  justify-content: space-between;
+}
+.container .about-main .advent .box .a-boxes {
+  border: 2px solid rgb(147, 147, 147);
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 13px;
+  margin: 10px 0;
+  padding: 25px 15px;
+}
+.container .about-main .advent .box .a-boxes img {
+  width: 50px;
+}
+.container .about-main .advent .box .a-boxes .line {
+  width: 60px;
+  background-color: black;
+  height: 2px;
+}
+.container .about-main .advent .box .a-boxes .line2 {
+  width: 60px;
+  background-color: black;
+  height: 2px;
 }/*# sourceMappingURL=style.css.map */
